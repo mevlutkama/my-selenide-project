@@ -5,6 +5,8 @@ Feature: locators feature
     And I enter username
     And I enter password
     And I enter submit button
+    And I wait for 3 seconds
     And I click on logout link
+    And I wait for 3 seconds
     Then I hold the browser open
 

@@ -20,6 +20,4 @@ public class TestPage {
     public SelenideElement password = $(By.id("exampleInputPassword1"));
     public SelenideElement submitButton = $(By.xpath("//button[@type='submit']"));
     public SelenideElement logOutLink = $(By.partialLinkText("Logout"));
-
-
 }
