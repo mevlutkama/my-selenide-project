@@ -2,7 +2,6 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import pages.TestPage;
-
 public class TestPageStepDefinitions {
     TestPage testPage = new TestPage();
     @Given("I enter username")
@@ -17,7 +16,6 @@ public class TestPageStepDefinitions {
     public void i_enter_submit_button() {
         testPage.submitButton.click();
     }
-
     @Given("I click on logout link")
     public void i_click_on_logout_link() {
         testPage.logOutLink.click();

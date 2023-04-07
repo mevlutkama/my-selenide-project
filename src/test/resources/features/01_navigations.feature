@@ -9,6 +9,7 @@ Feature: navigations
     And I navigate forward
     And I wait for 3 seconds
     And I refresh the page
+    And I wait for 3 seconds
     Then I hold the browser open
 
     

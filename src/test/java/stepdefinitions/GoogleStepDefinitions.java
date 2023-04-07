@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Condition.*;
 
 public class GoogleStepDefinitions {
     GooglePage googlePage = new GooglePage();
-
     @Given("I navigate to {string}")
     public void i_navigate_to(String string) {
         // open("https://www.google.com");
@@ -56,7 +55,7 @@ public class GoogleStepDefinitions {
 
         // WebDriverRunner.url(); //RETURNS THE URL OF THE PAGE
         String pageSource = WebDriverRunner.source();//RETURNS THE PAGE SOURCE
-        System.out.println(pageSource);
+        // System.out.println(pageSource);
         Assert.assertTrue(pageSource.contains(string));
     }
 
@@ -72,6 +71,6 @@ public class GoogleStepDefinitions {
 
     @Then("the first result in the page sections should contain {string}")
     public void theFirstResultInThePageSectionsShouldContain(String string) {
-        googlePage.getAllSections.get(0).shouldHave(text(string));
+        googlePage.getAllSections.get(0).shouldHave(text(string));// checks is the first section contains Tesla keyword
     }
 }
