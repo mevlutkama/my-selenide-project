@@ -57,7 +57,6 @@ public class GoogleStepDefinitions {
         // System.out.println(pageSource);
         Assert.assertTrue(pageSource.contains(string));
     }
-
     @Then("verify the result should contain {string} keyword")
     public void verify_the_result_should_contain_keyword(String string) {
 
