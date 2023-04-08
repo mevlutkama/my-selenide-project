@@ -67,7 +67,6 @@ public class GoogleStepDefinitions {
         googlePage.resultSection.shouldBe(visible);//checks if resultSection element is visible on the page
         // googlePage.resultSection.shouldHave(exactText("About 702,000,000 results"));//Checks the exact text match
     }
-
     @Then("the first result in the page sections should contain {string}")
     public void theFirstResultInThePageSectionsShouldContain(String string) {
         googlePage.getAllSections.get(0).shouldHave(text(string));// checks is the first section contains Tesla keyword
