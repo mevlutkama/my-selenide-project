@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -34,4 +35,14 @@ public class TestPage {
     public SelenideElement year = $(By.id("year"));
     public SelenideElement month = $(By.id("month"));
     public SelenideElement day = $(By.id("day"));
+
+    public ElementsCollection allStates = $$(By.xpath("//select[@id='state']//option"));
+
+    // Alert Elements
+    public SelenideElement jsPromptButton = $(By.xpath("//button[@onclick='jsPrompt()']"));
+    public SelenideElement result = $(By.id("result"));
+
+    public SelenideElement pageHeader = $(By.xpath("//h3"));
+    public SelenideElement backToTechpro = $(By.xpath("//a[@type='button']"));
+
 }

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="27.12" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="dropdown" name="TC01_selecting birth year" time="26.593">
+<testsuite name="Cucumber" time="57.031" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="iframe" name="TC01_frame" time="55.267">
 <system-out><![CDATA[
-Given I navigate to "https://testcenter.techproeducation.com/index.php?page=dropdown".passed
-And I select the year as 2000...............................................passed
-And I select the months as "June"...........................................passed
-And I select the day as 10..................................................passed
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=iframe".passed
+And I verify the page header contains "iframe"..............................passed
+And I switch to the frame 1.................................................passed
+And I click on Back to TechProEducation.com.................................passed
 And I hold the browser open.................................................passed
+When I switch to window 2...................................................passed
+And I wait for 5 seconds....................................................passed
+Then I get the URL of the page and verify it contains "techproeducation"....passed
 ]]></system-out>
 </testcase>
 </testsuite>

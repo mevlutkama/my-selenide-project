@@ -5,4 +5,5 @@ Feature: dropdown
     And I select the year as 2000
     And I select the months as "June"
     And I select the day as 10
+    And I get te list of US states and click on "Texas"
     And I hold the browser open
