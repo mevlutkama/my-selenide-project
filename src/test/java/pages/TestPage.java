@@ -44,4 +44,8 @@ public class TestPage {
 
     public SelenideElement pageHeader = $(By.xpath("//h3"));
     public SelenideElement backToTechpro = $(By.xpath("//a[@type='button']"));
+
+    // Actions
+    public SelenideElement source = $(By.id("draggable"));
+    public SelenideElement target = $(By.id("droppable"));
 }

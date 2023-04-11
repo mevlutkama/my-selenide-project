@@ -7,8 +7,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.TestPage;
 
+import static com.codeborne.selenide.Selenide.actions;
 import static com.codeborne.selenide.Selenide.switchTo;
 
 public class TestPageStepDefinitions {
@@ -119,5 +121,39 @@ public class TestPageStepDefinitions {
     public void i_get_the_url_of_the_page_and_verify_it_contains(String string) {
         System.out.println(WebDriverRunner.url());
         Assert.assertTrue(WebDriverRunner.url().contains(string));
+    }
+
+    // Actions
+    @When("I drag the source in the target")
+    public void i_drag_the_source_in_the_target() {
+//       actions().
+//               dragAndDrop(testPage.source,testPage.target).// moving source to target
+//               build().
+//               perform();// required to execute the commands
+
+//        actions().
+//                clickAndHold(testPage.source).
+//                moveToElement(testPage.target).
+//                build().
+//                perform();
+
+        // Or we can move to the specific coordinates
+        actions().dragAndDropBy(testPage.source, 145,18).
+                build().
+                perform();
+    }
+
+    @Given("I scrol the page down")
+    public void i_scrol_the_page_down() {
+        actions().
+                sendKeys(Keys.PAGE_DOWN).
+                build().
+                perform();
+
+        // Or to move a little bit
+        actions().
+                sendKeys(Keys.ARROW_DOWN).
+                build().
+                perform();
     }
 }
