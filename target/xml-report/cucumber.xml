@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="43.995" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="actions" name="TC01 actions" time="29.271">
+<testsuite name="Cucumber" time="52.147" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="screenshots" name="element screenshot" time="50.756">
 <system-out><![CDATA[
-Given I navigate to "https://jqueryui.com/droppable/".......................passed
-And I switch to the frame 1.................................................passed
-When I drag the source in the target........................................passed
-Then I hold the browser open................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="actions" name="TC02 actions" time="13.667">
-<system-out><![CDATA[
-Given I navigate to "https://testcenter.techproeducation.com/"..............passed
-And I scrol the page down...................................................passed
+Given I navigate to "https://www.techproeducation.com"......................passed
+And I capture the screenshot of the program pop up..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

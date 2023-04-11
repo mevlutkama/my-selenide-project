@@ -8,4 +8,5 @@ Feature: actions
 
   Scenario: TC02 actions
     Given I navigate to "https://testcenter.techproeducation.com/"
+    And I wait for 3 seconds
     And I scrol the page down

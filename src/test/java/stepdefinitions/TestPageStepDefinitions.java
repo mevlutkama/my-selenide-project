@@ -7,8 +7,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.junit.rules.ExpectedException;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.TestPage;
+
+import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.actions;
 import static com.codeborne.selenide.Selenide.switchTo;
@@ -155,5 +160,27 @@ public class TestPageStepDefinitions {
                 sendKeys(Keys.ARROW_DOWN).
                 build().
                 perform();
+    }
+
+    // Explicit Wait
+    @Given("I click on start button")
+    public void i_click_on_start_button() {
+        testPage.startButton.click();
+    }
+    @Then("verify the Hello World! text is displayed")
+    public void verify_the_hello_world_text_is_displayed() {
+        // Fails with no wait
+        // System.out.println("TEXT ==> " + testPage.helloWorld.getText());
+        // Assert.assertEquals("Hello World!", testPage.helloWorld.getText());
+
+        // To fix the issue the best option is explicit wait because it is dynamic
+        // 1.Handle with WebDriverWait class
+        // WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(), Duration.ofSeconds(20));
+        // wait.until(ExpectedConditions.visibilityOf(testPage.helloWorld));
+        // Assert.assertEquals("Hello World!", testPage.helloWorld.getText());
+
+        // 2. selenide wait
+        testPage.helloWorld.should(Condition.visible, Duration.ofSeconds(20));
+        Assert.assertEquals("Hello World!", testPage.helloWorld.getText());
     }
 }

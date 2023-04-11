@@ -48,4 +48,11 @@ public class TestPage {
     // Actions
     public SelenideElement source = $(By.id("draggable"));
     public SelenideElement target = $(By.id("droppable"));
+
+    // Explicit Wait
+    public SelenideElement startButton = $(By.xpath("//div[@id='start']//button"));
+    public SelenideElement helloWorld = $(By.xpath("//div[@id='finish']//h4"));
+
+    // Screenshot
+    public SelenideElement upcomingProgram = $(By.id("MjI4NDoxMDk1-1"));
 }

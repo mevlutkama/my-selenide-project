@@ -4,7 +4,7 @@ Feature: assertions2
     Given I navigate to "https://www.google.com"
     When I search for "Tesla"
     Then verify page source contains "Tesla"
-    Then verify the result should contain "About" keyword
+    Then verify the result should contain "Yaklaşık" keyword
     Then the first result in the page sections should contain "Tesla"
 
     # Created test case in feature folder
