@@ -214,7 +214,7 @@ public class TestPageStepDefinitions {
 
     @And("I click on {string} by JS on amazon table")
     public void iClickOnByJSOnAmazonTable(String arg0) {
-        // $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'Amazon Music')]"));
+        $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'Amazon Music')]"));
         SelenideElement element = $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'" + arg0 + "')]"));
         executeJavaScript("arguments[0].click;",element);
 
