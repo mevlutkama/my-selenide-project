@@ -205,4 +205,20 @@ public class TestPageStepDefinitions {
     public void iVerifyTheFileIsUploaded() {
         $(By.xpath("//h3")).shouldHave(Condition.text("File Uploaded!"));
     }
+
+    @And("I scroll down to footer section")
+    public void iScrollDownToFooterSection() {
+        SelenideElement footer = $(By.xpath("//table[@class='navFooterMoreOnAmazon']"));
+        executeJavaScript("arguments[0].scrollIntoView(true);", footer);
+    }
+
+    @And("I click on {string} by JS on amazon table")
+    public void iClickOnByJSOnAmazonTable(String arg0) {
+        // $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'Amazon Music')]"));
+        SelenideElement element = $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'" + arg0 + "')]"));
+        executeJavaScript("arguments[0].click;",element);
+
+        // Alternatively Locating the element with JS
+        // executeJavaScript("document.getElementById('nav-logo-sprites').click();");
+    }
 }

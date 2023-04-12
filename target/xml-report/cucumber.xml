@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="47.744" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="file uploads" name="TC01 file upload" time="44.934">
+<testsuite name="Cucumber" time="51.122" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="js executor" name="TC01 js executor" time="48.597">
 <system-out><![CDATA[
-Given I navigate to "https://the-internet.herokuapp.com/upload".............passed
-And I wait for 3 seconds....................................................passed
-And I try to upload the file on this path "/Desktop/Tell_me_about_your_project_medunna.docx".passed
-Then I verify the file is uploaded..........................................passed
+Given I navigate to "https://www.amazon.com"................................passed
+And I wait for 2 seconds....................................................passed
+And I scroll down to footer section.........................................passed
 And I capture the screenshot of the page....................................passed
+And I click on "Amazon Music" by JS on amazon table.........................passed
 And I hold the browser open.................................................passed
 ]]></system-out>
 </testcase>
