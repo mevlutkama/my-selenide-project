@@ -3,20 +3,22 @@ package stepdefinitions;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.junit.rules.ExpectedException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.TestPage;
 
+import java.io.File;
 import java.time.Duration;
 
-import static com.codeborne.selenide.Selenide.actions;
-import static com.codeborne.selenide.Selenide.switchTo;
+import static com.codeborne.selenide.Selenide.*;
 
 public class TestPageStepDefinitions {
     TestPage testPage = new TestPage();
@@ -182,5 +184,25 @@ public class TestPageStepDefinitions {
         // 2. selenide wait
         testPage.helloWorld.should(Condition.visible, Duration.ofSeconds(20));
         Assert.assertEquals("Hello World!", testPage.helloWorld.getText());
+    }
+
+    @And("I try to upload the file on this path {string}")
+    public void iTryToUploadTheFileOnThisPath(String arg0) {
+        // Getting the file path
+        //            User Directory                  + File Path = Full Path
+        String path = System.getProperty("user.home") + arg0;
+        System.out.println(path);
+        File fullPath = new File(path);
+
+        // Selecting the file
+        $(By.id("file-upload")).uploadFile(fullPath);
+
+        // Click upload button
+        $(By.id("file-submit")).click();
+    }
+
+    @Then("I verify the file is uploaded")
+    public void iVerifyTheFileIsUploaded() {
+        $(By.xpath("//h3")).shouldHave(Condition.text("File Uploaded!"));
     }
 }
