@@ -6,7 +6,6 @@ import org.junit.Assert;
 import pages.TestPage;
 import static com.codeborne.selenide.Selenide.*;
 public class TechproStepDefinitions {
-
     TestPage testPage = new TestPage();
 
     @Given("I get the title of the current page and verify if it contains {string}")
