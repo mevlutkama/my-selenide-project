@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import pages.TestPage;
-
 import static com.codeborne.selenide.Selenide.*;
 public class TechproStepDefinitions {
 
