@@ -8,16 +8,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.junit.rules.ExpectedException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.TestPage;
-
 import java.io.File;
 import java.time.Duration;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestPageStepDefinitions {
@@ -129,7 +124,6 @@ public class TestPageStepDefinitions {
         System.out.println(WebDriverRunner.url());
         Assert.assertTrue(WebDriverRunner.url().contains(string));
     }
-
     // Actions
     @When("I drag the source in the target")
     public void i_drag_the_source_in_the_target() {
@@ -149,7 +143,6 @@ public class TestPageStepDefinitions {
                 build().
                 perform();
     }
-
     @Given("I scrol the page down")
     public void i_scrol_the_page_down() {
         actions().
@@ -185,7 +178,6 @@ public class TestPageStepDefinitions {
         testPage.helloWorld.should(Condition.visible, Duration.ofSeconds(20));
         Assert.assertEquals("Hello World!", testPage.helloWorld.getText());
     }
-
     @And("I try to upload the file on this path {string}")
     public void iTryToUploadTheFileOnThisPath(String arg0) {
         // Getting the file path
@@ -200,18 +192,15 @@ public class TestPageStepDefinitions {
         // Click upload button
         $(By.id("file-submit")).click();
     }
-
     @Then("I verify the file is uploaded")
     public void iVerifyTheFileIsUploaded() {
         $(By.xpath("//h3")).shouldHave(Condition.text("File Uploaded!"));
     }
-
     @And("I scroll down to footer section")
     public void iScrollDownToFooterSection() {
         SelenideElement footer = $(By.xpath("//table[@class='navFooterMoreOnAmazon']"));
         executeJavaScript("arguments[0].scrollIntoView(true);", footer);
     }
-
     @And("I click on {string} by JS on amazon table")
     public void iClickOnByJSOnAmazonTable(String arg0) {
         $(By.xpath("//table[@class='navFooterMoreOnAmazon']//*[contains(text(),'Amazon Music')]"));
