@@ -6,7 +6,6 @@ import org.junit.Assert;
 import pages.TestPage;
 
 import static com.codeborne.selenide.Selenide.*;
-
 public class TechproStepDefinitions {
 
     TestPage testPage = new TestPage();
