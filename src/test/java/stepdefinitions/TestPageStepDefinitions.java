@@ -33,7 +33,6 @@ public class TestPageStepDefinitions {
     public void i_click_on_logout_link() {
         testPage.logOutLink.click();
     }
-
     // Checkbox_Radio
     @Given("I click on {string} if not already selected")
     public void i_click_on_if_not_already_selected(String string) {
