@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 12, 2023 01:28:00 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 15, 2023 05:55:17 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 12, 2023 01:28:00 PM</h3>
+<h3>Apr 15, 2023 05:55:17 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 12, 2023 01:28:58 PM</h3>
+<h3>Apr 15, 2023 05:56:08 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"js executor":48.025
+"navigations":49.055
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@js_executor</td>
+<td>@navigations</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 10,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@js_executor</a>
+<a class="dropdown-item" href="#">@navigations</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">js executor</p>
+            <p class="name">navigations</p>
             <p class="text-sm">
-              <span>1:28:06 PM</span> / <span>00:00:48:025</span>
+              <span>5:55:19 PM</span> / <span>00:00:49:055</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">js executor</h5>
-<span class='badge badge-success'>04.12.2023 1:28:06 PM</span>
-<span class='badge badge-danger'>04.12.2023 1:28:55 PM</span>
-<span class='badge badge-default'>00:00:48:025</span>
+<h5 class="test-status text-pass">navigations</h5>
+<span class='badge badge-success'>04.15.2023 5:55:19 PM</span>
+<span class='badge badge-danger'>04.15.2023 5:56:08 PM</span>
+<span class='badge badge-default'>00:00:49:055</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,48 +274,58 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01 js executor</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>navigations test</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://www.amazon.com"</span>
+                <span>Given I navigate to "https://www.google.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_to(java.lang.String)">
+                <span>And I navigate to "https://amazon.com"</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
-                <span>And I wait for 2 seconds</span>
+                <span>And I wait for 3 seconds</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.iScrollDownToFooterSection()">
-                <span>And I scroll down to footer section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
-                <span>And I wait for 2 seconds</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDefinitions.i_capture_the_screenshot_of_the_page()">
-                <span>And I capture the screenshot of the page</span>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_back()">
+                <span>And I navigate back</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
-                <span>And I wait for 2 seconds</span>
+                <span>And I wait for 3 seconds</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.iClickOnByJSOnAmazonTable(java.lang.String)">
-                <span>And I click on "Amazon Music" by JS on amazon table</span>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_forward()">
+                <span>And I navigate forward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
+                <span>And I wait for 3 seconds</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_refresh_the_page()">
+                <span>And I refresh the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
+                <span>And I wait for 3 seconds</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_hold_the_browser_open()">
-                <span>And I hold the browser open</span>
+                <span>Then I hold the browser open</span>
       <div>
       </div>
               </div>
@@ -347,12 +357,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@js_executor</p>
+<p class="name">@navigations</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@js_executor</h4>
+<h4>@navigations</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -366,11 +376,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:28:07 PM</td>
+<td>17:55:19 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01 js executor</a>
+<a href="#" class="linked" test-id='1' id='2'>navigations test</a>
 <div class="">
-<span class="badge badge-default">js executor.TC01 js executor</span>
+<span class="badge badge-default">navigations.navigations test</span>
 </div>
 </td>
 </tr>

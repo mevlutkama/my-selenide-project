@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="51.122" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="js executor" name="TC01 js executor" time="48.597">
+<testsuite name="Cucumber" time="49.648" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="navigations" name="navigations test" time="49.215">
 <system-out><![CDATA[
-Given I navigate to "https://www.amazon.com"................................passed
-And I wait for 2 seconds....................................................passed
-And I scroll down to footer section.........................................passed
-And I capture the screenshot of the page....................................passed
-And I click on "Amazon Music" by JS on amazon table.........................passed
-And I hold the browser open.................................................passed
+Given I navigate to "https://www.google.com"................................passed
+And I navigate to "https://amazon.com"......................................passed
+And I wait for 3 seconds....................................................passed
+And I navigate back.........................................................passed
+And I navigate forward......................................................passed
+And I refresh the page......................................................passed
+Then I hold the browser open................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
