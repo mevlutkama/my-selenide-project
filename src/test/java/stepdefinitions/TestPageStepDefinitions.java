@@ -156,7 +156,6 @@ public class TestPageStepDefinitions {
                 build().
                 perform();
     }
-
     // Explicit Wait
     @Given("I click on start button")
     public void i_click_on_start_button() {
