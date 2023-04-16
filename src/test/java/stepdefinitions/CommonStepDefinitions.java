@@ -15,7 +15,6 @@ public class CommonStepDefinitions {
         Selenide.screenshot("images");// Or simply
         // screenshot(new Date().toString());// giving a dynamic name
     }
-
     @Given("I open the {string} browser")
     public void iOpenTheBrowser(String browserType) {
         switch (browserType){
