@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 15, 2023 05:55:17 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 15, 2023 06:34:24 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 15, 2023 05:55:17 PM</h3>
+<h3>Apr 15, 2023 06:34:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 15, 2023 05:56:08 PM</h3>
+<h3>Apr 15, 2023 06:34:54 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>10</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"navigations":49.055
+"locators feature":28.432
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@navigations</td>
+<td>@locators</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 10,
+passGrandChild: 8,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@navigations</a>
+<a class="dropdown-item" href="#">@locators</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">navigations</p>
+            <p class="name">locators feature</p>
             <p class="text-sm">
-              <span>5:55:19 PM</span> / <span>00:00:49:055</span>
+              <span>6:34:26 PM</span> / <span>00:00:28:432</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">navigations</h5>
-<span class='badge badge-success'>04.15.2023 5:55:19 PM</span>
-<span class='badge badge-danger'>04.15.2023 5:56:08 PM</span>
-<span class='badge badge-default'>00:00:49:055</span>
+<h5 class="test-status text-pass">locators feature</h5>
+<span class='badge badge-success'>04.15.2023 6:34:26 PM</span>
+<span class='badge badge-danger'>04.15.2023 6:34:54 PM</span>
+<span class='badge badge-default'>00:00:28:432</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,38 +274,28 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>navigations test</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_locators</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://www.google.com"</span>
+                <span>Given I navigate to "https://testcenter.techproeducation.com/index.php?page=form-authentication"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_to(java.lang.String)">
-                <span>And I navigate to "https://amazon.com"</span>
+              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.i_enter_username()">
+                <span>And I enter username</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
-                <span>And I wait for 3 seconds</span>
+              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.i_enter_password()">
+                <span>And I enter password</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_back()">
-                <span>And I navigate back</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_wait_for_seconds(java.lang.Integer)">
-                <span>And I wait for 3 seconds</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_navigate_forward()">
-                <span>And I navigate forward</span>
+              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.i_enter_submit_button()">
+                <span>And I enter submit button</span>
       <div>
       </div>
               </div>
@@ -314,8 +304,8 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefinitions.i_refresh_the_page()">
-                <span>And I refresh the page</span>
+              <div class="step pass-bg" title="stepdefinitions.TestPageStepDefinitions.i_click_on_logout_link()">
+                <span>And I click on logout link</span>
       <div>
       </div>
               </div>
@@ -357,12 +347,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@navigations</p>
+<p class="name">@locators</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@navigations</h4>
+<h4>@locators</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -376,11 +366,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:55:19 PM</td>
+<td>18:34:26 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>navigations test</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_locators</a>
 <div class="">
-<span class="badge badge-default">navigations.navigations test</span>
+<span class="badge badge-default">locators feature.TC01_locators</span>
 </div>
 </td>
 </tr>

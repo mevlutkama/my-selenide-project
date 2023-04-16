@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="49.648" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="navigations" name="navigations test" time="49.215">
+<testsuite name="Cucumber" time="29.19" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="locators feature" name="TC01_locators" time="28.644">
 <system-out><![CDATA[
-Given I navigate to "https://www.google.com"................................passed
-And I navigate to "https://amazon.com"......................................passed
+Given I navigate to "https://testcenter.techproeducation.com/index.php?page=form-authentication".passed
+And I enter username........................................................passed
+And I enter password........................................................passed
+And I enter submit button...................................................passed
 And I wait for 3 seconds....................................................passed
-And I navigate back.........................................................passed
-And I navigate forward......................................................passed
-And I refresh the page......................................................passed
+And I click on logout link..................................................passed
 Then I hold the browser open................................................passed
 ]]></system-out>
 </testcase>
