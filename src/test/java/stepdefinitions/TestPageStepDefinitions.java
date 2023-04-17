@@ -99,7 +99,6 @@ public class TestPageStepDefinitions {
     public void i_verify_the_result_contains(String string) {
         testPage.result.shouldHave(Condition.text(string));
     }
-
     @Given("I verify the page header contains {string}")
     public void i_verify_the_page_header_contains(String string) {
         testPage.pageHeader.shouldHave(Condition.text(string));
