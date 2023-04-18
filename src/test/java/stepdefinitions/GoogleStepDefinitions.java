@@ -38,7 +38,6 @@ public class GoogleStepDefinitions {
     public void i_refresh_the_page() {
         refresh();
     }
-
     @Then("I hold the browser open")
     public void i_hold_the_browser_open() {
         Configuration.holdBrowserOpen = true;
