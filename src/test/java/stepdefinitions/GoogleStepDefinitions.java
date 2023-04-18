@@ -33,7 +33,6 @@ public class GoogleStepDefinitions {
     public void i_navigate_forward() {
         forward();
     }
-
     @Given("I refresh the page")
     public void i_refresh_the_page() {
         refresh();
