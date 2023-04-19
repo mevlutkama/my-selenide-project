@@ -35,7 +35,6 @@ public class TestPage {
     public SelenideElement year = $(By.id("year"));
     public SelenideElement month = $(By.id("month"));
     public SelenideElement day = $(By.id("day"));
-
     public ElementsCollection allStates = $$(By.xpath("//select[@id='state']//option"));
 
     // Alert Elements
