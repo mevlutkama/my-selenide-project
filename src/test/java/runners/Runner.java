@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
+
         monochrome=true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"},
