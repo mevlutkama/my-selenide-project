@@ -28,7 +28,6 @@ public class GoogleStepDefinitions {
     public void i_navigate_back() {
         back();
     }
-
     @Given("I navigate forward")
     public void i_navigate_forward() {
         forward();
