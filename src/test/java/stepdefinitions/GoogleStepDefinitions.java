@@ -45,7 +45,6 @@ public class GoogleStepDefinitions {
     public void i_search_for(String string) {
         googlePage.googleSearchBox.setValue(string).pressEnter();
     }
-
     @Then("verify page source contains {string}")
     public void verify_page_source_contains(String string) {
 
