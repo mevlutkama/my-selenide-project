@@ -41,7 +41,6 @@ public class GoogleStepDefinitions {
     public void i_hold_the_browser_open() {
         Configuration.holdBrowserOpen = true;
     }
-
     @When("I search for {string}")
     public void i_search_for(String string) {
         googlePage.googleSearchBox.setValue(string).pressEnter();
